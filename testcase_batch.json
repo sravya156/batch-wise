@@ -1,0 +1,134 @@
+{
+  "total_batches": 5,
+  "batches": [
+    {
+      "batch_id": "batch_01",
+      "test_cases": [
+        {
+          "testcase_id": "TC_001",
+          "title": "Verify application launches successfully",
+          "steps": ["Open the application"],
+          "expected_output": "Application should launch without errors"
+        },
+        {
+          "testcase_id": "TC_002",
+          "title": "Verify login with valid credentials",
+          "steps": ["Enter valid username", "Enter valid password", "Click Login button"],
+          "expected_output": "User should be logged in successfully"
+        },
+        {
+          "testcase_id": "TC_003",
+          "title": "Verify login with invalid credentials",
+          "steps": ["Enter invalid username", "Enter invalid password", "Click Login button"],
+          "expected_output": "Error message should be displayed"
+        },
+        {
+          "testcase_id": "TC_004",
+          "title": "Verify empty username validation",
+          "steps": ["Leave username field empty", "Enter password", "Click Login button"],
+          "expected_output": "Username required validation message should appear"
+        },
+        {
+          "testcase_id": "TC_005",
+          "title": "Verify empty password validation",
+          "steps": ["Enter username", "Leave password field empty", "Click Login button"],
+          "expected_output": "Password required validation message should appear"
+        },
+        {
+          "testcase_id": "TC_006",
+          "title": "Verify logout functionality",
+          "steps": ["Login to application", "Click Logout button"],
+          "expected_output": "User should be logged out successfully"
+        },
+        {
+          "testcase_id": "TC_007",
+          "title": "Verify forgot password link",
+          "steps": ["Click Forgot Password link"],
+          "expected_output": "Forgot password page should open"
+        },
+        {
+          "testcase_id": "TC_008",
+          "title": "Verify password reset with valid email",
+          "steps": ["Enter registered email", "Click Reset button"],
+          "expected_output": "Password reset email should be sent"
+        },
+        {
+          "testcase_id": "TC_009",
+          "title": "Verify remember me checkbox",
+          "steps": ["Select Remember Me checkbox", "Login to application"],
+          "expected_output": "User session should be remembered"
+        },
+        {
+          "testcase_id": "TC_010",
+          "title": "Verify login page UI elements",
+          "steps": ["Open login page"],
+          "expected_output": "All UI elements should be displayed correctly"
+        }
+      ]
+    },
+
+    {
+      "batch_id": "batch_02",
+      "test_cases": [
+        { "testcase_id": "TC_011", "title": "Verify dashboard loads after login", "steps": ["Login with valid credentials"], "expected_output": "Dashboard should load successfully" },
+        { "testcase_id": "TC_012", "title": "Verify profile page access", "steps": ["Login", "Navigate to Profile page"], "expected_output": "Profile page should open" },
+        { "testcase_id": "TC_013", "title": "Verify profile update", "steps": ["Open Profile page", "Update profile details", "Click Save"], "expected_output": "Profile should be updated successfully" },
+        { "testcase_id": "TC_014", "title": "Verify invalid profile update", "steps": ["Enter invalid data", "Click Save"], "expected_output": "Validation error message should be shown" },
+        { "testcase_id": "TC_015", "title": "Verify navigation menu", "steps": ["Login", "Click each menu option"], "expected_output": "Each menu should navigate correctly" },
+        { "testcase_id": "TC_016", "title": "Verify search functionality", "steps": ["Enter keyword in search box", "Click Search"], "expected_output": "Relevant results should be displayed" },
+        { "testcase_id": "TC_017", "title": "Verify empty search", "steps": ["Click Search without keyword"], "expected_output": "Validation message should appear" },
+        { "testcase_id": "TC_018", "title": "Verify notifications icon", "steps": ["Click notifications icon"], "expected_output": "Notifications should be displayed" },
+        { "testcase_id": "TC_019", "title": "Verify settings page", "steps": ["Navigate to Settings page"], "expected_output": "Settings page should load" },
+        { "testcase_id": "TC_020", "title": "Verify session timeout", "steps": ["Login", "Remain idle for session timeout duration"], "expected_output": "User should be logged out automatically" }
+      ]
+    },
+
+    {
+      "batch_id": "batch_03",
+      "test_cases": [
+        { "testcase_id": "TC_021", "title": "Verify create new record", "steps": ["Click Create button", "Enter valid data", "Save record"], "expected_output": "New record should be created" },
+        { "testcase_id": "TC_022", "title": "Verify mandatory fields validation", "steps": ["Leave mandatory fields empty", "Click Save"], "expected_output": "Mandatory field validation message should appear" },
+        { "testcase_id": "TC_023", "title": "Verify edit record", "steps": ["Select existing record", "Edit details", "Save changes"], "expected_output": "Record should be updated" },
+        { "testcase_id": "TC_024", "title": "Verify delete record", "steps": ["Select record", "Click Delete", "Confirm deletion"], "expected_output": "Record should be deleted" },
+        { "testcase_id": "TC_025", "title": "Verify cancel delete", "steps": ["Click Delete", "Cancel confirmation"], "expected_output": "Record should not be deleted" },
+        { "testcase_id": "TC_026", "title": "Verify pagination", "steps": ["Navigate through paginated list"], "expected_output": "Records should load correctly per page" },
+        { "testcase_id": "TC_027", "title": "Verify sorting functionality", "steps": ["Click column header"], "expected_output": "Records should be sorted" },
+        { "testcase_id": "TC_028", "title": "Verify filter functionality", "steps": ["Apply filter criteria"], "expected_output": "Filtered records should be displayed" },
+        { "testcase_id": "TC_029", "title": "Verify export data", "steps": ["Click Export button"], "expected_output": "Data should be exported successfully" },
+        { "testcase_id": "TC_030", "title": "Verify refresh data", "steps": ["Click Refresh button"], "expected_output": "Latest data should be loaded" }
+      ]
+    },
+
+    {
+      "batch_id": "batch_04",
+      "test_cases": [
+        { "testcase_id": "TC_031", "title": "Verify file upload", "steps": ["Click Upload", "Select valid file"], "expected_output": "File should be uploaded successfully" },
+        { "testcase_id": "TC_032", "title": "Verify invalid file upload", "steps": ["Upload unsupported file format"], "expected_output": "Error message should be displayed" },
+        { "testcase_id": "TC_033", "title": "Verify download file", "steps": ["Click Download button"], "expected_output": "File should be downloaded" },
+        { "testcase_id": "TC_034", "title": "Verify print option", "steps": ["Click Print button"], "expected_output": "Print dialog should open" },
+        { "testcase_id": "TC_035", "title": "Verify help section", "steps": ["Click Help option"], "expected_output": "Help content should be displayed" },
+        { "testcase_id": "TC_036", "title": "Verify tooltip display", "steps": ["Hover over info icon"], "expected_output": "Tooltip should be shown" },
+        { "testcase_id": "TC_037", "title": "Verify keyboard navigation", "steps": ["Navigate using keyboard keys"], "expected_output": "Application should support keyboard navigation" },
+        { "testcase_id": "TC_038", "title": "Verify accessibility labels", "steps": ["Inspect UI elements"], "expected_output": "Accessibility labels should be present" },
+        { "testcase_id": "TC_039", "title": "Verify language selection", "steps": ["Change language from settings"], "expected_output": "Application language should change" },
+        { "testcase_id": "TC_040", "title": "Verify theme change", "steps": ["Switch theme mode"], "expected_output": "Theme should update correctly" }
+      ]
+    },
+
+    {
+      "batch_id": "batch_05",
+      "test_cases": [
+        { "testcase_id": "TC_041", "title": "Verify application performance", "steps": ["Perform normal user actions"], "expected_output": "Application should respond within acceptable time" },
+        { "testcase_id": "TC_042", "title": "Verify error handling", "steps": ["Trigger application error"], "expected_output": "User-friendly error message should be displayed" },
+        { "testcase_id": "TC_043", "title": "Verify network failure handling", "steps": ["Disconnect network", "Perform action"], "expected_output": "Network error message should appear" },
+        { "testcase_id": "TC_044", "title": "Verify data persistence", "steps": ["Save data", "Reload application"], "expected_output": "Data should persist" },
+        { "testcase_id": "TC_045", "title": "Verify concurrent user access", "steps": ["Login with multiple users"], "expected_output": "System should handle multiple users" },
+        { "testcase_id": "TC_046", "title": "Verify browser compatibility", "steps": ["Open application in different browsers"], "expected_output": "Application should work in all supported browsers" },
+        { "testcase_id": "TC_047", "title": "Verify mobile responsiveness", "steps": ["Open application on mobile device"], "expected_output": "UI should adapt to screen size" },
+        { "testcase_id": "TC_048", "title": "Verify logout on browser close", "steps": ["Login", "Close browser", "Reopen application"], "expected_output": "User should be logged out" },
+        { "testcase_id": "TC_049", "title": "Verify audit logs generation", "steps": ["Perform user actions"], "expected_output": "Audit logs should be created" },
+        { "testcase_id": "TC_050", "title": "Verify system stability", "steps": ["Run application for extended duration"], "expected_output": "Application should remain stable" }
+      ]
+    }
+  ]
+}
