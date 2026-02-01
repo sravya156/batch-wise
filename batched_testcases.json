@@ -1437,7 +1437,7 @@
         {
   "testCases": [
     {
-      "testCaseId": "TC_LOGIN_0011",
+      "testCaseId": "0011",
       "title": "Verify user can log in with valid credentials",
       "preconditions": [
         "Application is installed and launchable",
@@ -1460,7 +1460,7 @@
       ]
     },
     {
-      "testCaseId": "TC_LOGIN_0012",
+      "testCaseId": "0012",
       "title": "Verify error message is shown for invalid password",
       "preconditions": [
         "Application is installed and launchable",
@@ -1482,7 +1482,7 @@
       ]
     },
     {
-      "testCaseId": "TC_LOGIN_0013",
+      "testCaseId": "0013",
       "title": "Verify navigation to create account from login screen",
       "preconditions": [
         "Application is installed and launchable",
